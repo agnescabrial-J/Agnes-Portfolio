@@ -1,0 +1,176 @@
+{
+    "appName": "FutureBox",
+    "version": "1.0",
+    "baseUrls": {
+        "local": "http://localhost:5000/",
+        "staging": "http://localhost:5000/",
+        "development": "http://localhost:5000/",
+        "production": "http://localhost:5000/"
+    },
+    "domains": {
+        "users": "users/",
+        "dashboard": "dashboard/",
+        "login": "login/",
+        "admin": "admin/"
+    },
+    "auth": {
+        "base": "auth/"
+    },
+    "commands": {
+        "test": {
+            "api": {
+                "action": "api",
+                "method": "GET",
+                "authorization": false
+            }
+        },
+        "users": {
+            "login": {
+                "action": "login",
+                "method": "POST",
+                "authorization": false,
+                "version": true
+            },
+            "verify": {
+                "action": "verify",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "logout": {
+                "action": "logout",
+                "method": "POST",
+                "authorization": true,
+                "version": true
+            }
+        },
+        "notifications": {
+            "getNotifications": {
+                "action": "notifications",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "unread-count": {
+                "action": "unread-count",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "mark-read": {
+                "action": "mark-read",
+                "method": "POST",
+                "authorization": true,
+                "version": true
+            },
+            "mark-all-read": {
+                "action": "mark-all-read",
+                "method": "POST",
+                "authorization": true,
+                "version": true
+            }
+        },
+        "dashboard": {
+            "insights": {
+                "action": "insights",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            }
+        },
+        "admin": {
+            "getCategory": {
+                "action": "categories",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "createCategory": {
+                "action": "categories",
+                "method": "POST",
+                "authorization": true,
+                "version": true
+            },
+            "updateCategory": {
+                "action": "categories",
+                "method": "PUT",
+                "authorization": true,
+                "version": true
+            },
+            "deleteCategory": {
+                "action": "categories",
+                "method": "DELETE",
+                "authorization": true,
+                "version": true
+            },
+            "getUsers": {
+                "action": "users",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "editUser": {
+                "action": "user/edit",
+                "method": "PUT",
+                "authorization": true,
+                "version": true
+            },
+            "userAccess": {
+                "action": "user/access",
+                "method": "POST",
+                "authorization": true,
+                "version": true
+            },
+            "getRoles": {
+                "action": "roles",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "getApproveIdeas": {
+                "action": "approvals",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "getPrivateIdeas": {
+                "action": "ideas",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "getInsights": {
+                "action": "insights",
+                "method": "GET",
+                "authorization": true,
+                "version": true
+            },
+            "changeStatus": {
+                "action": "approvals/update",
+                "method": "POST",
+                "authorization": true,
+                "version": true
+            }
+        }
+    },
+    "swalMessages": {
+        "ideaSaved": {
+            "anonymousPublic": {
+                "title": "Shared anonymously!",
+                "message": "Your voice is now part of the public conversation. Thanks for contributing!"
+            },
+            "anonymousPrivate": {
+                "title": "Privately received!",
+                "message": "Your anonymous submission is secure. We'll review it thoughtfully and consider it internally."
+            },
+            "byNamePublic": {
+                "title": "Posted and live!",
+                "message": "Your contribution is now visible to the community. Thanks for sharing your perspective!"
+            },
+            "byNamePrivate": {
+                "title": "Securely saved!",
+                "message": "Your private submission is safe with us. We'll review it carefully and take it forward."
+            }
+        }
+    }
+}
