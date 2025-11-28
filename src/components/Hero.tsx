@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github } from "lucide-react";
+import { Mail, Linkedin, Download, FileText } from "lucide-react";
 import { Button } from "./ui/button";
 
 const Hero = () => {
@@ -20,30 +20,46 @@ const Hero = () => {
           Specialized in eCommerce solutions and creating scalable, user-focused digital experiences.
         </p>
 
-        <div className="flex flex-wrap gap-4 justify-center items-center pt-6">
-          <Button 
-            variant="default" 
-            size="lg"
-            className="bg-primary hover:bg-terracotta-dark text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all duration-300"
-            onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            <Mail className="mr-2 h-5 w-5" />
-            Get In Touch
-          </Button>
-          
-          <a 
-            href="https://www.linkedin.com/in/agnescabrial" 
-            target="_blank" 
-            rel="noopener noreferrer"
-          >
+        <div className="flex flex-col items-center gap-6 pt-6">
+          {/* Primary CTAs */}
+          <div className="flex flex-wrap gap-4 justify-center items-center">
             <Button 
-              variant="outline" 
+              variant="default" 
               size="lg"
-              className="border-border hover:bg-muted hover:border-primary transition-all duration-300"
+              className="bg-primary hover:bg-terracotta-dark text-primary-foreground shadow-[0_0_20px_hsl(var(--primary)/0.3)] hover:shadow-[0_0_30px_hsl(var(--primary)/0.5)] transition-all duration-300"
+              onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             >
-              <Linkedin className="mr-2 h-5 w-5" />
-              LinkedIn
+              <Mail className="mr-2 h-5 w-5" />
+              Get In Touch
             </Button>
+            
+            <a 
+              href="https://www.linkedin.com/in/agnescabrial" 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-border hover:bg-muted hover:border-primary transition-all duration-300"
+              >
+                <Linkedin className="mr-2 h-5 w-5" />
+                LinkedIn
+              </Button>
+            </a>
+          </div>
+
+          {/* Download Resume Button */}
+          <a 
+            href="/Agnes-Portfolio/resume.pdf" 
+            download="Agnes_Cabrial_Resume.pdf"
+            className="group inline-flex items-center gap-3 px-5 py-2.5 bg-card/50 backdrop-blur-sm border border-border rounded-lg hover:bg-card hover:border-primary/50 transition-all duration-300"
+          >
+            <div className="flex items-center justify-center w-8 h-8 bg-primary/10 rounded-md group-hover:bg-primary/20 transition-colors">
+              <Download className="h-4 w-4 text-primary group-hover:translate-y-0.5 transition-transform duration-300" />
+            </div>
+            <span className="font-medium text-foreground">Download Resume</span>
+            <FileText className="h-4 w-4 text-muted-foreground group-hover:text-foreground transition-colors" />
           </a>
         </div>
       </div>
