@@ -13,7 +13,7 @@ const Experience = () => {
         "Resolved 15+ production bugs, improving application stability and performance",
         "Reviewed and approved Git pull requests; contributed to scalable Angular-based modules",
         "Full-Stack NFC Integration — Independently developed a mobile-compatible NFC solution with tag read/write functionality using Django and JavaScript",
-        "Secure Authentication & Dashboard APIs — Built a secure authentication system with OTP-based login and password recovery using Django and AWS SES SMTP"
+        "Secure Authentication & Dashboard APIs — Built a Parking management system with OTP-based login and password recovery using Django and AWS SES SMTP"
       ]
     },
     {
@@ -22,7 +22,7 @@ const Experience = () => {
       location: "Chennai, India",
       period: "June 2022 – April 2024",
       achievements: [
-        "Developed eCommerce solutions for BigCommerce/Shopify using PHP, JS, and Stencil.js",
+        "Developed eCommerce solutions for BigCommerce using  JS, and Stencil.js",
         "Delivered features like geo-pricing, store pickup, and intelligent product recommendations APIs",
         "Optimized site performance using GTmetrix and PageSpeed Insights",
         "Implemented GA4 tracking for banners, videos, and product interactions"

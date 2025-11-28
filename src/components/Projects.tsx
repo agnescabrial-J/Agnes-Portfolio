@@ -19,9 +19,9 @@ const Projects = () => {
     },
     {
       icon: Shield,
-      title: "Secure Authentication System",
+      title: "Parking management system",
       technologies: ["Django", "AWS SES", "REST API"],
-      description: "Built a secure authentication system with OTP-based login and password recovery using Django and AWS SES SMTP. Implemented robust session and token validation following best practices.",
+      description: "Built a Parking management system with OTP-based login and password recovery using Django and AWS SES SMTP. Implemented robust session and token validation following best practices.",
       features: [
         "OTP-based authentication",
         "Secure password recovery",

@@ -13,7 +13,7 @@ const Skills = () => {
     },
     {
       category: "E-commerce",
-      skills: ["BigCommerce", "Shopify", "Stencil.js", "Theme Customization"]
+      skills: ["BigCommerce", "Stencil.js", "Theme Customization"]
     },
     {
       category: "Tools & Analytics",
